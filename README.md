@@ -34,25 +34,25 @@ func main() {
 	//query
 	list := db.FindAll("select * from user")
 	log.Printf("list: %v\n", list)
-  
-   //counts
-  counts := db.Counts("select count(1) from user")
-  
-  //update
-  var vals = []interface{}{}
-  dbl.Update("update test set abc=1",vals)
-  
-  //insert
-  vo := make(map[string]interface{})
-  tableName := "test"
-  vo["id"] = 1
-  vo["name"] = "test"
-  ret := db.Insert(vo, tableName)
-  
-  //MultiInsert
-  var list = []map[string]interface{}
-  list = append(list, vo)
-  ret = db.MultiInsert(list, tableName)
+
+	//counts
+	counts := db.Counts("select count(1) from user")
+
+	//update
+	var vals = []interface{}{}
+	dbl.Update("update test set abc=1",vals)
+
+	//insert
+	vo := make(map[string]interface{})
+	tableName := "test"
+	vo["id"] = 1
+	vo["name"] = "test"
+	ret := db.Insert(vo, tableName)
+
+	//MultiInsert
+	var list = []map[string]interface{}
+	list = append(list, vo)
+	ret = db.MultiInsert(list, tableName)
  }
  ```
  
