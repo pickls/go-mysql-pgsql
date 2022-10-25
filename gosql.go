@@ -1,4 +1,4 @@
-package sqlmode
+package gosql
 
 import (
 	"database/sql"
