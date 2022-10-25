@@ -10,7 +10,8 @@ Golang language integration of mysql and postgresql operations
 
 ```sh
 $ go get github.com/go-sql-driver/mysql
-$ go get github.com/bonjovis/go-mysql
+$ go get github.com/lib/pq
+$ go get github.com/pickls/go-mysql-postgresql
 ```
 
 
